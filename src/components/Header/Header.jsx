@@ -1,11 +1,14 @@
+import { Link } from "react-router";
+
 const Header = () => {
     return (
-        <div>
-            <h2>NavBar</h2>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
+        <div className="my-11">
+            <span className="flex justify-center text-center font-bold text-2xl items-center">My Website</span>
+            <nav className="font-bold text-2xl flex justify-center gap-7">
+                <Link to="/">Home</Link>
+                <Link to="/users">Users</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </nav>
         </div>
     );
