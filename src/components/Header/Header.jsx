@@ -1,15 +1,16 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
+import './Header.css';
 
 const Header = () => {
     return (
         <div className="my-11">
-            <span className="flex justify-center text-center font-bold text-2xl items-center">My Website</span>
+            <span className="flex justify-center text-center font-bold text-2xl my-4 items-center">My Website</span>
             <nav className="font-bold text-2xl flex justify-center gap-7">
-                <Link to="/">Home</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/posts">Posts</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/users">Users</NavLink>
+                <NavLink to="/posts">Posts</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </nav>
         </div>
     );

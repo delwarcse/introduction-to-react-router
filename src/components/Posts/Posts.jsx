@@ -3,7 +3,6 @@ import Post from "../Post/Post";
 
 const Posts = () => {
     const posts = useLoaderData();
-    // const{title}=post;
     return (
         <div>
             <h2 className="text-center font-bold text-2xl">
